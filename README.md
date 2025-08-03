@@ -1,5 +1,4 @@
 # 🗽 NYC Yellow Taxi Data Analysis (June 2025)
-
 This project explores NYC Yellow Taxi trip data to uncover patterns in passenger behavior, trip fares, tips, and congestion trends using Python and pandas.
 
 ## 🔍 Dataset
