@@ -2,7 +2,6 @@
 This project explores NYC Yellow Taxi trip data to uncover patterns in passenger behavior, trip fares, tips, and congestion trends using Python and pandas.
 
 ## 🔍 Dataset
-
 - Source: NYC TLC Taxi Trips  
 - File Used: `yellow_tripdata_2025-06.parquet`  
 - Size: 4.3 million rows × 20 columns
