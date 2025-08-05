@@ -29,3 +29,11 @@ This project explores NYC Yellow Taxi trip data to uncover patterns in passenger
 | `congestion_surcharge`  | Fee added for trips below 96th St in Manhattan (usually \$2.75)                                   |
 | `Airport_fee`           | Flat fee for pickups from airports (like JFK, LaGuardia)                                          |
 | `cbd_congestion_fee`    | Congestion fee for entering Manhattan’s Central Business District                                 |
+
+outputs/feature_engineering/
+├── trip_duration_distribution.png
+├── trip_speed_distribution.png
+├── trips_by_time_of_day.png
+├── trips_by_day_of_week.png
+└── rush_hour_trip_count.png
+
