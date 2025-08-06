@@ -86,6 +86,10 @@ This time frame aligns with the end of standard office hours (9:00 AM to 4:00 PM
 Refrences : figure_1 A2 Rides by Hour of Day (Data Visualization)
             figure_1 Heatmap Number of Rides by Day and Hour (Advance Visualization)
             figure_3 Total Passenger by Hour (Time Series Data Analysis)
+            nyc_taxi_data_analysis.py
+            DataVisualization.py
+            AdvancedVisualization.py
+            TimeSeriesDataAnalysis.py
 
 
 ---
