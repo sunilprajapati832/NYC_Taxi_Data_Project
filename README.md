@@ -1,10 +1,19 @@
-# 🗽 NYC Yellow Taxi Data Analysis (June 2025)
-This project explores NYC Yellow Taxi trip data to uncover patterns in passenger behavior, trip fares, tips, and congestion trends using Python and pandas.
 
-## 🔍 Dataset
-- Source: NYC TLC Taxi Trips  
-- File Used: `yellow_tripdata_2025-06.parquet`  
-- Size: 4.3 million rows × 20 columns
+
+
+
+
+outputs/feature_engineering/
+├── trip_duration_distribution.png
+├── trip_speed_distribution.png
+├── trips_by_time_of_day.png
+├── trips_by_day_of_week.png
+└── rush_hour_trip_count.png
+
+# 🗽 NYC Yellow Taxi Trip Data Analytics Project (focused on Transportation Application of Data Analytics)
+**Project Duration:** June 2025  
+**Dataset Size:** ~4.3M rows × 20 columns `yellow_tripdata_2025-06.parquet`(.parquet format)  
+**Project Type:** Real-World, End-to-End Data Analytics with Community Collaboration  (This project explores NYC Yellow Taxi trip data to uncover patterns in passenger behavior, trip fares, tips, and congestion trends using Python and pandas.)
 
 ## 📊 Columns Explained
 | **Column Name**         | **Description**                                                                                   |
@@ -30,10 +39,184 @@ This project explores NYC Yellow Taxi trip data to uncover patterns in passenger
 | `Airport_fee`           | Flat fee for pickups from airports (like JFK, LaGuardia)                                          |
 | `cbd_congestion_fee`    | Congestion fee for entering Manhattan’s Central Business District                                 |
 
-outputs/feature_engineering/
-├── trip_duration_distribution.png
-├── trip_speed_distribution.png
-├── trips_by_time_of_day.png
-├── trips_by_day_of_week.png
-└── rush_hour_trip_count.png
 
+
+Step 1: Define the Problem Statement
+Step 2: Understand the Business Context
+Step 3: Data Collection
+Step 4: Data Inspection & Loading
+Step 5: Data Cleaning
+Step 6: Feature Understanding
+Step 7: Data Transformation
+Step 8: Exploratory Data Analysis (EDA)
+Step 9: Advanced Insights
+Step 10: Geospatial Mapping (Optional)
+Step 11: Machine Learning
+Step 12: Data Visualization & Storytelling
+Step 13: Publishing & GitHub Upload
+Step 14: Decision Making & Actions
+
+
+
+
+---
+
+## ✅ Step 1: Define the Problem Statement
+
+**Goal:** Uncover meaningful insights from NYC Yellow Taxi trip data — such as peak demand hours, tipping behavior, airport ride patterns, and cost breakdowns — using scalable analytics workflows.
+
+### Key Questions:
+
+1- When are most taxi rides occurring (peak hours)?
+2- How do payment types affect tip amounts?
+3- Are there differences in fare trends between weekdays and weekends?
+4- What are the most frequent pickup and dropoff locations?
+5- How do airport fees and congestion surcharges impact total cost?
+6- Can we build features like trip duration, speed, or surge indicators?
+
+### Answers (after complete analysis):
+
+1- 📈 Answer:
+According to our analysis of NYC Yellow Taxi trip data for June 2025, the peak ride demand occurs between 3:00 PM and 7:00 PM.
+🕒 Top Peak Hours Identified:
+Highest trip volumes observed during: 3:00 PM to 7:00 PM (Consistent daily spikes in this evening window)
+🔍 Why This Happens:
+This time frame aligns with the end of standard office hours (9:00 AM to 4:00 PM). As workers leave offices, demand for taxis increases sharply — especially in business districts like Midtown and Downtown Manhattan.
+
+Refrences : figure_1 A2 Rides by Hour of Day (Data Visualization)
+            figure_1 Heatmap Number of Rides by Day and Hour (Advance Visualization)
+            figure_3 Total Passenger by Hour (Time Series Data Analysis)
+
+
+---
+
+## ✅ Step 2: Understand the Business Context
+
+- **Domain:** Urban Transportation & Public Mobility
+- **Stakeholders:** Taxi companies, planners, analysts, passengers
+- **Tools:** Python, Pandas, Seaborn, PyArrow, Gamma App, GitHub
+
+
+# 1 - Answer's 🧠 Business Implication:
+Taxi operators and mobility platforms can: Prioritize driver dispatch and dynamic pricing in these hours
+                                           Strategically position vehicles near office zones to capture evening demand
+                              Data Source: Trip count grouped by pickup hour from 4.3M rides in June 2025 (tpep_pickup_datetime → .dt.hour) (Data Transformation)
+
+---
+
+## ✅ Step 3: Data Collection
+
+- **Source:** NYC Taxi & Limousine Commission (TLC)
+- **File:** `yellow_tripdata_2025-06.parquet`
+- **Why Parquet?** Fast, compressed, scalable format
+
+```python
+import pandas as pd
+df = pd.read_parquet("yellow_tripdata_2025-06.parquet")
+```
+
+---
+
+## ✅ Step 4: Data Inspection & Loading
+
+- Loaded dataset
+- Viewed shape, columns, data types
+
+---
+
+## ✅ Step 5: Data Cleaning
+
+- Handled nulls
+- Fixed datatypes
+- Removed invalid records
+
+```python
+df = df.dropna()
+df = df[df['passenger_count'] > 0]
+```
+
+---
+
+## ✅ Step 6: Feature Understanding
+
+20 original columns including:
+- `trip_distance`, `tip_amount`, `payment_type`, `fare_amount`, `congestion_surcharge`
+
+---
+
+## ✅ Step 7: Data Transformation
+
+Created:
+- `trip_duration`, `hour`, `day_of_week`, `price_per_mile`
+
+```python
+df['trip_duration'] = (df['tpep_dropoff_datetime'] - df['tpep_pickup_datetime']).dt.total_seconds() / 60
+```
+
+---
+
+## ✅ Step 8: Exploratory Data Analysis (EDA)
+
+- Distributions: Distance, Fare, Tip
+- Time Patterns: Hour, Weekday
+- Visuals: Histograms, Boxplots, Countplots
+
+---
+
+## ✅ Step 9: Advanced Insights
+
+- Tip by payment method
+- Weekend vs Weekday fare comparison
+- Airport ride analysis
+
+---
+
+## ✅ Step 10: Geospatial Mapping (Optional)
+
+Mapped pickup/dropoff zones using Taxi Zone GeoJSON
+
+---
+
+## ✅ Step 11: Machine Learning (Optional)
+
+- Predicting tip_amount
+- Logistic regression for tip/no tip classification
+
+---
+
+## ✅ Step 12: Data Visualization & Storytelling
+
+- Gamma App for AI-powered presentation
+- Matplotlib & Seaborn for charts
+
+---
+
+## ✅ Step 13: Publishing & GitHub Upload
+
+**Repo Includes:**
+- Scripts
+- Notebooks
+- Visuals
+- Project README
+
+---
+
+## ✅ Step 14: Decision Making & Actions
+
+- Evening rides are most common
+- Credit card rides yield more tips
+- Airport rides follow fixed fee model
+
+---
+
+## 📎 Final Notes
+
+- 📁 [Dataset Source](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+- 🔗 GitHub: [Insert Your Repo Link]
+- 🛠 Built by: Sunil Prajapati | Python + Data + Gamma
+
+---
+
+## 📌 Tags
+
+#DataAnalytics #NYCTaxi #Python #EDA #FeatureEngineering #AIApps #GammaApp #TransportationAnalytics #PortfolioProject #LinkedInProjects
