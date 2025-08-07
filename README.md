@@ -68,7 +68,7 @@ Step 14: Decision Making & Actions
 ### Key Questions:
 
 1- When are most taxi rides occurring (peak hours)?
-2- How do payment types affect tip amounts?
+2- How do payment types affect tip amounts & which method is most commonly preferred by customers?
 3- Are there differences in fare trends between weekdays and weekends?
 4- What are the most frequent pickup and dropoff locations?
 5- How do airport fees and congestion surcharges impact total cost?
@@ -83,14 +83,42 @@ Highest trip volumes observed during: 3:00 PM to 7:00 PM (Consistent daily spike
 🔍 Why This Happens:
 This time frame aligns with the end of standard office hours (9:00 AM to 4:00 PM). As workers leave offices, demand for taxis increases sharply — especially in business districts like Midtown and Downtown Manhattan.
 
-Refrences : figure_1 A2 Rides by Hour of Day (Data Visualization)
-            figure_1 Heatmap Number of Rides by Day and Hour (Advance Visualization)
-            figure_3 Total Passenger by Hour (Time Series Data Analysis)
-            nyc_taxi_data_analysis.py
-            DataVisualization.py
-            AdvancedVisualization.py
-            TimeSeriesDataAnalysis.py
+Refrences : ├── figure_1 A2 Rides by Hour of Day (Data Visualization)
+            ├── figure_1 Heatmap Number of Rides by Day and Hour (Advance Visualization)
+            ├── figure_3 Total Passenger by Hour (Time Series Data Analysis)
+            ├── nyc_taxi_data_analysis.py
+            ├── DataVisualization.py
+            ├── AdvancedVisualization.py
+            ├── TimeSeriesDataAnalysis.py
 
+
+2- 📈 Answer: 
+This analysis revealed that payment type significantly impacts ride & tipping behavior. Specifically:
+💳 Credit card payments are associated with: 
+Credit cards are the overwhelmingly preferred payment method (85.8 %) with Higher average tip amounts (4.43 $)
+Tip Frequency 93.39%
+Greater likelihood of leaving a tip
+💵 Cash payments tend to show:
+Lower recorded tips ( 0.0004 $ Avg ) possibly due to offline tipping
+Analysis of 4.3 million taxi rides shows that both tipping behavior and payment preferences strongly favor Credit Cards (Refrenced by PyCharm Console Result Table).
+
+Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizationForTip)
+            ├── Figure_1 Average Tip Amount by Payment Type (DataVisualizationForTip)
+            ├── Figure_4 Distribution of Payment Types (Blue: Credit Card) (TimeSeriesDataAnalysis)
+            ├── Figure_5 Daily Trends in Payment Types (TimeSeriesDataAnalysis)
+            ├── payment_type_distribution (Type 1: Credit Card) (nyc_taxi_eda_pipeline)
+            ├── Figure_3.2 Feature Importance XGBoost (nyc_taxi_fare_prediction_ML)
+            ├── Figure_4 Feature Importance Random Forest (nyc_taxi_fare_prediction_ML)
+            ├── DataVisualizationForTip.py
+            ├── nyc_taxi_eda_pipeline.py
+            ├── nyc_taxi_fare_prediction_ML.py
+            ├── TimeSeriesDataAnalysis.py
+           
+
+
+
+
+            
 
 ---
 
