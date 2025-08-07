@@ -3,12 +3,7 @@
 
 
 
-outputs/feature_engineering/
-├── trip_duration_distribution.png
-├── trip_speed_distribution.png
-├── trips_by_time_of_day.png
-├── trips_by_day_of_week.png
-└── rush_hour_trip_count.png
+
 
 # 🗽 NYC Yellow Taxi Trip Data Analytics Project (focused on Transportation Application of Data Analytics)
 **Project Duration:** June 2025  
