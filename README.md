@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 # 🗽 NYC Yellow Taxi Trip Data Analytics Project (focused on Transportation Application of Data Analytics)
 **Project Duration:** June 2025  
 **Dataset Size:** ~4.3M rows × 20 columns `yellow_tripdata_2025-06.parquet`(.parquet format)  
@@ -254,3 +247,11 @@ Mapped pickup/dropoff zones using Taxi Zone GeoJSON
 ## 📌 Tags
 
 #DataAnalytics #NYCTaxi #Python #EDA #FeatureEngineering #AIApps #GammaApp #TransportationAnalytics #PortfolioProject #LinkedInProjects
+
+
+outputs/feature_engineering/
+├── trip_duration_distribution.png
+├── trip_speed_distribution.png
+├── trips_by_time_of_day.png
+├── trips_by_day_of_week.png
+└── rush_hour_trip_count.png
