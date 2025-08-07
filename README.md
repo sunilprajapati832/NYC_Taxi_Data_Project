@@ -133,6 +133,13 @@ Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizati
 Taxi operators and mobility platforms can: Prioritize driver dispatch and dynamic pricing in these hours
                                            Strategically position vehicles near office zones to capture evening demand
                               Data Source: Trip count grouped by pickup hour from 4.3M rides in June 2025 (tpep_pickup_datetime → .dt.hour) (Data Transformation)
+                              
+# 2 - Answer's 🧠 Business Implication:
+Digital payments (especially credit cards) dominate both in usage and tipping behavior. Riders who pay via credit card are over 13,000x more likely to leave a tip compared to cash. Digital tipping is clearly favored, likely due to in-app prompts and ease of entry. 
+Encourage and prioritize digital payment systems to enhance driver earnings and customer experience. Tip-based incentive programs should be optimized around card-paying customers.
+
+
+
 
 ---
 
