@@ -109,10 +109,11 @@ Yes — our analysis confirms clear differences in fare patterns between weekday
 |Weekday	            |     20	            |        3.83	|       3.42	            |            "2,182,054"            |
 |Weekend	            |   20.37	            |        3.72	|       3.74	            |            "796,350"              |
 
-## 📊 Columns Explained
+## Console O/P
 |  **Day Type**           |          **Avg Fare ($)**          |             **Avg Tip ($)**        |        **Avg Distance (mi)**       |      **Total Rides**        |
 | ----------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- | --------------------------- |
 | Weekday                 |               20	               |                3.83                |               3.42                 |          "2,182,054"        |
+| Weekend                 |               20.37	               |                3.72                |               3.74                 |          "796,350"          |
 
 While weekend rides are slightly more expensive and cover longer distances, the average tips are marginally lower than weekdays — possibly due to higher fare base and more leisure/non-work-related trips.
 Day	     Avg Fare ($)	Avg Tip ($)	Avg Distance (mi)
