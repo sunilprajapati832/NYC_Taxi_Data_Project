@@ -105,10 +105,6 @@ Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizati
 
 3- 📈 Answer: 
 Yes — our analysis confirms clear differences in fare patterns between weekdays and weekends. While the average fare remains similar, we observe notable variations in trip distance, rider behavior and volume. 
-| **Day Type**	|   **Avg Fare ($)**	|    **Avg Tip ($)**	|    **Avg Distance (mi)**	|        **Total Rides**            |
-|Weekday	            |     20	            |        3.83	|       3.42	            |            "2,182,054"            |
-|Weekend	            |   20.37	            |        3.72	|       3.74	            |            "796,350"              |
-
 ## Console O/P
 |  **Day Type**           |          **Avg Fare ($)**          |             **Avg Tip ($)**        |        **Avg Distance (mi)**       |      **Total Rides**        |
 | ----------------------- | ---------------------------------- | ---------------------------------- | ---------------------------------- | --------------------------- |
