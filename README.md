@@ -103,6 +103,35 @@ Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizati
             ├── TimeSeriesDataAnalysis.py
            
 
+3- 📈 Answer: 
+Yes — our analysis confirms clear differences in fare patterns between weekdays and weekends. While the average fare remains similar, we observe notable variations in trip distance, rider behavior and volume. 
+Day Type	   Avg Fare ($)	Avg Tip ($)	    Avg Distance (mi)	Total Rides
+Weekday	     20	              3.83	       3.42	            "2,182,054"
+Weekend	   20.37	              3.72	       3.74	            "796,350"
+While weekend rides are slightly more expensive and cover longer distances, the average tips are marginally lower than weekdays — possibly due to higher fare base and more leisure/non-work-related trips.
+Day	     Avg Fare ($)	Avg Tip ($)	Avg Distance (mi)
+Monday	      20.35	               3.86	3.71
+Tuesday	      19.46	               3.81	3.32
+Wednesday	      20.24	               3.82	3.21
+Thursday	      19.9	               3.88	3.35
+Friday	      20.05	               3.78	3.51
+Saturday	      19.13	               3.51	3.37
+Sunday	      21.52	               3.92	4.09
+Sunday stands out with the highest fare, longest rides, and highest tipping — likely reflecting longer, leisure-focused trips, airport transfers, or post-weekend travel.
+
+Refrences : ├── Figure_1 Average Fare Weekdays vs Weekends (DataVisualizationFareTrends)
+            ├── Figure_7 Daily Average Trip Distance (TimeSeriesDataAnalysis)
+            ├── Figure_1 B2 Fare Amount vs Trip Distance (DataVisualization) 
+            ├── Figure_1 Average Fare Amount Over Time (AdvancedVisualizations)
+            ├── Figure_1 A4 Average Fare by Day of Week (DataVisualization)
+            ├── DataVisualizationFareTrends (Console O/P)
+            ├── DataVisualizationFareTrends.py
+            ├── DataVisualizations.py
+            ├── AdvancedVisualization.py
+            ├── TimeSeriesDataAnalysis.py
+           
+
+
 
 
 
@@ -126,7 +155,11 @@ Taxi operators and mobility platforms can: Prioritize driver dispatch and dynami
 Digital payments (especially credit cards) dominate both in usage and tipping behavior. Riders who pay via credit card are over 13,000x more likely to leave a tip compared to cash. Digital tipping is clearly favored, likely due to in-app prompts and ease of entry. 
 Encourage and prioritize digital payment systems to enhance driver earnings and customer experience. Tip-based incentive programs should be optimized around card-paying customers.
 
-
+# 3 - Answer's 🧠 Business Implication:
+Weekends → Longer trips, slightly higher fares, fewer total rides
+Sundays → Opportunity for surge pricing, leisure promotions, or targeted services
+Weekdays → Bulk of the volume; optimize driver distribution during peak office hours
+Use time-based pricing, weekend promos and targeted driver placement to maximize revenue across different day types.
 
 
 ---
