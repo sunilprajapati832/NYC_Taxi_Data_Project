@@ -111,6 +111,8 @@ Yes — our analysis confirms clear differences in fare patterns between weekday
 | Weekday                 |               20	               |                3.83                |               3.42                 |          "2,182,054"        |
 | Weekend                 |               20.37	               |                3.72                |               3.74                 |          "796,350"          |
 
+While weekend rides are slightly more expensive and cover longer distances, the average tips are marginally lower than weekdays — possibly due to higher fare base and more leisure/non-work-related trips.
+
 ## 
 |  **Day**           |          **Avg Fare ($)**          |             **Avg Tip ($)**        |        **Avg Distance (mi)**       |
 | ------------------ | ---------------------------------- | ---------------------------------- | ---------------------------------- | 
@@ -122,16 +124,6 @@ Yes — our analysis confirms clear differences in fare patterns between weekday
 | Saturday           |               19.13	          |                3.51                |               3.37                 |
 | Friday             |               21.52	          |                3.92                |               4.09                 |
 
-While weekend rides are slightly more expensive and cover longer distances, the average tips are marginally lower than weekdays — possibly due to higher fare base and more leisure/non-work-related trips.
-
-Day	     Avg Fare ($)	Avg Tip ($)	Avg Distance (mi)
-Monday	      20.35	               3.86	3.71
-Tuesday	      19.46	               3.81	3.32
-Wednesday	      20.24	               3.82	3.21
-Thursday	      19.9	               3.88	3.35
-Friday	      20.05	               3.78	3.51
-Saturday	      19.13	               3.51	3.37
-Sunday	      21.52	               3.92	4.09
 Sunday stands out with the highest fare, longest rides, and highest tipping — likely reflecting longer, leisure-focused trips, airport transfers, or post-weekend travel.
 
 Refrences : ├── Figure_1 Average Fare Weekdays vs Weekends (DataVisualizationFareTrends)
