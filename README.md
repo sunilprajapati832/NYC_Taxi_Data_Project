@@ -64,7 +64,7 @@ Step 14: Decision Making & Actions
 
 ### Answers (after complete analysis):
 
-1- 📈 Answer:
+## 1- 📈 Answer:
 According to our analysis of NYC Yellow Taxi trip data for June 2025, the peak ride demand occurs between 3:00 PM and 7:00 PM.
 🕒 Top Peak Hours Identified:
 Highest trip volumes observed during: 3:00 PM to 7:00 PM (Consistent daily spikes in this evening window)
@@ -80,7 +80,7 @@ Refrences : ├── figure_1 A2 Rides by Hour of Day (Data Visualization)
             ├── TimeSeriesDataAnalysis.py
 
 
-2- 📈 Answer: 
+## 2- 📈 Answer: 
 This analysis revealed that payment type significantly impacts ride & tipping behavior. Specifically:
 💳 Credit card payments are associated with: 
 Credit cards are the overwhelmingly preferred payment method (85.8 %) with Higher average tip amounts (4.43 $)
@@ -103,7 +103,7 @@ Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizati
             ├── TimeSeriesDataAnalysis.py
            
 
-3- 📈 Answer: 
+## 3- 📈 Answer: 
 Yes — our analysis confirms clear differences in fare patterns between weekdays and weekends. While the average fare remains similar, we observe notable variations in trip distance, rider behavior and volume. 
 ## Console O/P
 |  **Day Type**           |          **Avg Fare ($)**          |             **Avg Tip ($)**        |        **Avg Distance (mi)**       |      **Total Rides**        |
@@ -138,23 +138,24 @@ Refrences : ├── Figure_1 Average Fare Weekdays vs Weekends (DataVisualizat
             ├── TimeSeriesDataAnalysis.py
            
 
-4- 📈 Answer: 
+## 4- 📈 Answer: 
 Airports (JFK & LaGuardia) are major pickup points but not as dominant for drop-offs → indicating tourists and business travelers arriving more than departing in taxis.
 ## 
 |  **Zone**                        |          **total_rides**          |  
 | -------------------------------- | --------------------------------- | 
-| JFK Airport            |               171194             |
+| JFK Airport                      |               171194              |
 | Upper East Side South            |               154916	           |
 | Midetown Center                  |               147111              | 
-| Upper East Side North         |               128834	           |  
-| Penn Station/Madison Sq West                    |              110812          | 
+| Upper East Side North            |               128834	           |  
+| Penn Station/Madison Sq West     |              110812               | 
 | Midtown East                     |               109940	           |
-| LaGuardia Airport            |               109905	           |
-| Times Sq/Theatre District              |               101763	           | 
-| Lincoln Square East                  |               91611	           |
-| Murray Hill                     |               88751	           |
+| LaGuardia Airport                |               109905	           |
+| Times Sq/Theatre District        |               101763	           | 
+| Lincoln Square East              |               91611	           |
+| Murray Hill                      |               88751	           |
 
-
+Midtown & Times Square areas dominate both lists due to high tourist activity, business hubs, and entertainment venues.
+Upper East Side (both North & South) appears in top positions for both pickups and dropoffs → likely affluent residential demand.
 
 ## 
 |  **Zone**                        |          **total_rides**          |  
@@ -195,6 +196,13 @@ Weekends → Longer trips, slightly higher fares, fewer total rides
 Sundays → Opportunity for surge pricing, leisure promotions, or targeted services
 Weekdays → Bulk of the volume; optimize driver distribution during peak office hours
 Use time-based pricing, weekend promos and targeted driver placement to maximize revenue across different day types.
+
+# 4 - Answer's 🧠 Business Implication:
+Driver Allocation: Position drivers at JFK and LaGuardia during peak flight hours and in Midtown during rush hours.
+Pricing Strategy: Implement zone-based surge pricing for high-demand areas like Times Square, Midtown Center and Upper East Side.
+Tourism Services: Partnership opportunities with hotels, airports, and event organizers in these top areas.
+Customer Experience: Offer pre-booking or fixed-fare services from airports to popular dropoff neighborhoods.
+
 
 
 ---
