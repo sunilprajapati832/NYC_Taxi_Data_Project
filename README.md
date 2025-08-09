@@ -138,6 +138,21 @@ Refrences : ├── Figure_1 Average Fare Weekdays vs Weekends (DataVisualizat
             ├── TimeSeriesDataAnalysis.py
            
 
+4- 📈 Answer: 
+Airports (JFK & LaGuardia) are major pickup points but not as dominant for drop-offs → indicating tourists and business travelers arriving more than departing in taxis.
+## 
+|  **Zone**                        |          **total_rides**          |  
+| -------------------------------- | --------------------------------- | 
+| Upper East Side South            |               137227              |
+| Upper East Side North            |               136889	           |
+| Midetown Center                  |               117612              | 
+| Times Sq/Theatre Distric         |               96575	           |  
+| Midtown East                     |               88228	           | 
+| Murray Hill                      |               87752	           |
+| Upper West Side South            |               82373	           |
+| Lincoln Square East              |               81400	           | 
+| Lenox Hill West                  |               78051	           |
+| East Chelsea                     |               77715	           |
 
 
 
