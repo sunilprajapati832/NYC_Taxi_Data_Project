@@ -171,7 +171,19 @@ Upper East Side (both North & South) appears in top positions for both pickups a
 | Lenox Hill West                  |               78051	           |
 | East Chelsea                     |               77715	           |
 
-            
+Refrences : ├── Figure_1 Top 10 Pickup Location in NYC (June 2025) (TopPickupDropoffLocationsAnalysis)
+            ├── Figure_2 Figure_1 Top 10 Dropoff Locations in NYC (June 2025) (TopPickupDropoffLocationsAnalysis)
+            ├── TopPickupDropoffLocationsAnalysis.py
+            ├── yellow_tripdata_2025-06_cleaned.parquet
+            ├── taxi+_zone_lookup.csv
+            ├── Top_10_Dropoff_Locations.csv (got from output)  
+            ├── Top_10_Pickup_Locations.csv (got from output)
+
+
+
+
+
+
 
 ---
 
