@@ -154,6 +154,18 @@ Airports (JFK & LaGuardia) are major pickup points but not as dominant for drop-
 | Lenox Hill West                  |               78051	           |
 | East Chelsea                     |               77715	           |
 
+Zone	total_rides
+JFK Airport	171194
+Upper East Side South	154916
+Midtown Center	147111
+Upper East Side North	128834
+Penn Station/Madison Sq West	110812
+Midtown East	109940
+LaGuardia Airport	109905
+Times Sq/Theatre District	101763
+Lincoln Square East	91611
+Murray Hill	88751
+<img width="161" height="265" alt="image" src="https://github.com/user-attachments/assets/847cda90-6389-43d7-8251-ba9426a1603c" />
 
 
 
