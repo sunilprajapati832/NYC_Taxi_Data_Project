@@ -59,8 +59,8 @@ Step 14: Decision Making & Actions
 2- How do payment types affect tip amounts & which method is most commonly preferred by customers?
 3- Are there differences in fare trends between weekdays and weekends?
 4- What are the most frequent pickup and dropoff locations?
-5- How do airport fees and congestion surcharges impact total cost?
-6- Can we build features like trip duration, speed, or surge indicators?
+5- Can we build features like trip duration, speed or surge indicators?
+
 
 ### Answers (after complete analysis):
 
