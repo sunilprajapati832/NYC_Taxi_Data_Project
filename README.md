@@ -183,7 +183,7 @@ Refrences : ├── Figure_1 Top 10 Pickup Location in NYC (June 2025) (TopPic
 
 
 Refrences : ├── Average Speed by Hour of Day (TopPickupDropoffLocationsAnalysis)
-            ├── Figure_2 Figure_1 Top 10 Dropoff Locations in NYC (June 2025) (TopPickupDropoffLocationsAnalysis)
+            ├── Trip Demand Heatmap by Day and Hour (TopPickupDropoffLocationsAnalysis)
             ├── TopPickupDropoffLocationsAnalysis.py
             ├── yellow_tripdata_2025-06_cleaned.parquet
             ├── taxi+_zone_lookup.csv
