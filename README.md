@@ -184,7 +184,7 @@ Refrences : ├── Figure_1 Top 10 Pickup Location in NYC (June 2025) (TopPic
 
 Refrences : ├── Average Speed by Hour of Day (TopPickupDropoffLocationsAnalysis)
             ├── Trip Demand Heatmap by Day and Hour (TopPickupDropoffLocationsAnalysis)
-            ├── TopPickupDropoffLocationsAnalysis.py
+            ├── Trip Duration Distribution (Minutes)
             ├── yellow_tripdata_2025-06_cleaned.parquet
             ├── taxi+_zone_lookup.csv
             ├── Top_10_Dropoff_Locations.csv (got from output)  
