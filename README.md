@@ -350,7 +350,7 @@ df.loc[df['passenger_count'] == 0, 'passenger_count'
 # Remove invalid entries
 df = df[(df['fare_amount'] > 0) & (df['trip_distance'] > 0) & (df['trip_duration_minutes'] > 0)]
 
-##########
+########## nyc_taxi_fare_prediction & nyc_taxi_full_pipeline 
 # Drop rows with missing values in features or target
 df = df.dropna(subset=features + [target])
 
@@ -359,9 +359,7 @@ Refrences : ├── nyc_taxi_data_analysis.py
             ├── outlier_detection.py
             ├── nyc_taxi_fare_prediction.py
             ├── nyc_taxi_full_pipeline.py
-            ├── taxi+_zone_lookup.csv
-            ├── Top_10_Dropoff_Locations.csv (got from output)  
-            ├── Top_10_Pickup_Locations.csv (got from output)
+         
 ---
 
 ## ✅ Step 6: Feature Understanding
