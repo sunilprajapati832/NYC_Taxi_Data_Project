@@ -234,8 +234,10 @@ Customer Experience: Offer pre-booking or fixed-fare services from airports to p
 
 ```python
 import pandas as pd
+# df = pd.read_csv("yellow_tripdata_2025-06.csv") // if data in .csv file
 df = pd.read_parquet('yellow_tripdata_2025-06.parquet', engine='pyarrow')
 # we can use either 'pyarrow' or 'fastparquet' as the engine
+# df = pd.read_parquet("yellow_tripdata_2025-06_cleaned.parquet") for cleaned data
 print(df.columns)
 '''
 Index(['VendorID', 'tpep_pickup_datetime', 'tpep_dropoff_datetime','passenger_count', 'trip_distance', 'RatecodeID', 'store_and_fwd_flag','PULocationID', 'DOLocationID', 'payment_type', 'fare_amount', 'extra',
@@ -301,13 +303,9 @@ Process finished with exit code 0
 '''
 # Save cleaned dataset
 df.to_parquet('yellow_tripdata_2025-06_cleaned.parquet')      
-
-| **VendorID** | **tpep_pickup_datetime)** | **tpep_dropoff_datetime** | **passenger_count** | **trip_distance** |
-| ------------ | ------------------------- | ------------------------- | ------------------- | ----------------- |
-
-
 ```
-
+Refrences : ├── nyc_taxi_data_analysis
+            ├── 
 ---
 
 ## ✅ Step 4: Data Inspection & Loading
