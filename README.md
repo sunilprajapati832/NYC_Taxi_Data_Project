@@ -234,7 +234,78 @@ Customer Experience: Offer pre-booking or fixed-fare services from airports to p
 
 ```python
 import pandas as pd
-df = pd.read_parquet("yellow_tripdata_2025-06.parquet")
+df = pd.read_parquet('yellow_tripdata_2025-06.parquet', engine='pyarrow')
+# we can use either 'pyarrow' or 'fastparquet' as the engine
+print(df.columns)
+'''
+Index(['VendorID', 'tpep_pickup_datetime', 'tpep_dropoff_datetime','passenger_count', 'trip_distance', 'RatecodeID', 'store_and_fwd_flag','PULocationID', 'DOLocationID', 'payment_type', 'fare_amount', 'extra',
+       'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge','total_amount', 'congestion_surcharge', 'Airport_fee','cbd_congestion_fee'], dtype='object')
+
+'''
+print(df.head())
+'''
+    VendorID tpep_pickup_datetime  ... Airport_fee  cbd_congestion_fee
+0         1  2025-06-01 00:02:50  ...        1.75                0.75
+1         2  2025-06-01 00:11:27  ...        0.00                0.75
+2         1  2025-06-01 00:43:47  ...        0.00                0.75
+3         1  2025-06-01 00:01:15  ...        0.00                0.75
+4         7  2025-06-01 00:16:32  ...        0.00                0.75
+'''
+print(df.shape)
+# (4322960, 20)
+print(df.info())
+'''
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4322960 entries, 0 to 4322959
+Data columns (total 20 columns):
+ #   Column                 Dtype         
+---  ------                 -----         
+ 0   VendorID               int32         
+ 1   tpep_pickup_datetime   datetime64[us]
+ 2   tpep_dropoff_datetime  datetime64[us]
+ 3   passenger_count        float64       
+ 4   trip_distance          float64       
+ 5   RatecodeID             float64       
+ 6   store_and_fwd_flag     object        
+ 7   PULocationID           int32         
+ 8   DOLocationID           int32         
+ 9   payment_type           int64         
+ 10  fare_amount            float64       
+ 11  extra                  float64       
+ 12  mta_tax                float64       
+ 13  tip_amount             float64       
+ 14  tolls_amount           float64       
+ 15  improvement_surcharge  float64       
+ 16  total_amount           float64       
+ 17  congestion_surcharge   float64       
+ 18  Airport_fee            float64       
+ 19  cbd_congestion_fee     float64       
+dtypes: datetime64[us](2), float64(13), int32(3), int64(1), object(1)
+memory usage: 610.2+ MB
+None
+Process finished with exit code 0
+'''
+print(df.describe())
+'''
+VendorID  ... cbd_congestion_fee
+count  4.322960e+06  ...       4.322960e+06
+mean   1.887364e+00  ...       5.332318e-01
+min    1.000000e+00  ...      -7.500000e-01
+25%    2.000000e+00  ...       0.000000e+00
+50%    2.000000e+00  ...       7.500000e-01
+75%    2.000000e+00  ...       7.500000e-01
+max    7.000000e+00  ...       1.250000e+00
+std    7.588800e-01  ...       3.585827e-01
+[8 rows x 19 columns]
+Process finished with exit code 0
+'''
+# Save cleaned dataset
+df.to_parquet('yellow_tripdata_2025-06_cleaned.parquet')      
+
+| **VendorID** | **tpep_pickup_datetime)** | **tpep_dropoff_datetime** | **passenger_count** | **trip_distance** |
+| ------------ | ------------------------- | ------------------------- | ------------------- | ----------------- |
+
+
 ```
 
 ---
