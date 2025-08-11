@@ -330,10 +330,38 @@ Refrences : ├── nyc_taxi_data_analysis.py
 - Removed invalid records
 
 ```python
-df = df.dropna()
-df = df[df['passenger_count'] > 0]
-```
+########## Referenced from nyc_taxi_data_analysis.py
+# Nulls
+print(df.isnull().sum())
 
+# Drop Duplicates
+df = df.drop_duplicates()
+
+# Remove invalid rows
+df = df[df['trip_distance'] > 0]
+df = df[df['passenger_count'] > 0]
+df = df[df['fare_amount'] >= 0]
+
+# Fix passenger count (replace zeros with median)
+median_passenger = df['passenger_count'].median()
+df.loc[df['passenger_count'] == 0, 'passenger_count'
+
+########## outlier_detection
+# Remove invalid entries
+df = df[(df['fare_amount'] > 0) & (df['trip_distance'] > 0) & (df['trip_duration_minutes'] > 0)]
+
+##########
+# Drop rows with missing values in features or target
+df = df.dropna(subset=features + [target])
+
+```
+Refrences : ├── nyc_taxi_data_analysis.py
+            ├── outlier_detection.py
+            ├── nyc_taxi_fare_prediction.py
+            ├── nyc_taxi_full_pipeline.py
+            ├── taxi+_zone_lookup.csv
+            ├── Top_10_Dropoff_Locations.csv (got from output)  
+            ├── Top_10_Pickup_Locations.csv (got from output)
 ---
 
 ## ✅ Step 6: Feature Understanding
