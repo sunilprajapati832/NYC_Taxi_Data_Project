@@ -380,27 +380,68 @@ df = pd.read_parquet("yellow_tripdata_2025-06_cleaned.parquet")
 df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
 df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
 
-# 1️⃣ Create Trip Duration (minutes)
+# Creating day of week column 
+# df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
+df['day_of_week'] = df['tpep_pickup_datetime'].dt.day_name()
+
+# Create weekday/weekend column
+df['day_type'] = df['day_of_week'].apply(lambda x: 'Weekend' if x in ['Saturday', 'Sunday'] else 'Weekday')
+
+# Create output directory for charts
+os.makedirs("outputs/eda_charts", exist_ok=True)
+
+# Create Trip Duration (minutes)
 df['trip_duration_min'] = (df['tpep_dropoff_datetime'] - df['tpep_pickup_datetime']).dt.total_seconds() / 60
 
 # Filter out unrealistic trips
 df = df[(df['trip_duration_min'] > 0) & (df['trip_duration_min'] < 300)]  # less than 5 hours
 
-# 2️⃣ Create Average Speed (mph)
+# Create Average Speed (mph)
 df['avg_speed_mph'] = df['trip_distance'] / (df['trip_duration_min'] / 60)
 df = df[(df['avg_speed_mph'] > 0) & (df['avg_speed_mph'] < 80)]  # filter unrealistic speeds
 
-# 3️⃣ Create Surge-like Indicator
+# Create Surge-like Indicator
 df['hour'] = df['tpep_pickup_datetime'].dt.hour
 df['day_of_week'] = df['tpep_pickup_datetime'].dt.day_name()
 
 # Mark surge hours (Morning 8-9 AM, Evening 3-7 PM)
 df['surge_flag'] = df['hour'].apply(lambda x: 1 if (8 <= x <= 9) or (15 <= x <= 19) else 0)
 
+# Load your cleaned dataset
+df = pd.read_parquet('yellow_tripdata_2025-06_cleaned.parquet')
+
+# Feature Engineering
+df['pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
+df['dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
+
+df['trip_duration'] = (df['dropoff_datetime'] - df['pickup_datetime']).dt.total_seconds() / 60  # minutes
+df['pickup_hour'] = df['pickup_datetime'].dt.hour
+df['day_of_week'] = df['pickup_datetime'].dt.day_name()
+df['trip_speed_mph'] = df['trip_distance'] / (df['trip_duration'] / 60)
+
+df['is_weekend'] = df['day_of_week'].isin(['Saturday', 'Sunday'])
+df['rush_hour_flag'] = df['pickup_hour'].isin([7, 8, 9, 16, 17, 18])
+
+def time_of_day(hour):
+    if 5 <= hour < 12:
+        return 'Morning'
+    elif 12 <= hour < 17:
+        return 'Afternoon'
+    elif 17 <= hour < 21:
+        return 'Evening'
+    else:
+        return 'Night'
+df['time_of_day'] = df['pickup_hour'].apply(time_of_day)
+
+
 # Save engineered dataset
 df.to_csv('NYC_Taxi_with_Features.csv', index=False)
 print("Feature engineered dataset saved as 'NYC_Taxi_with_Features.csv'")
 ```
+Refrences : ├── Q5visualization.py
+            ├── DataVisualizationFareTrends.py
+            ├── nyc_taxi_eda_pipeline.py
+            ├── DataFeatureEngineering.py
 ---
 
 ## ✅ Step 7: Data Transformation
