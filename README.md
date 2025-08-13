@@ -180,7 +180,24 @@ Refrences : ├── Figure_1 Top 10 Pickup Location in NYC (June 2025) (TopPic
             ├── Top_10_Pickup_Locations.csv (got from output)
 
 ## 5- 📈 Answer: 
+Yes — the data strongly supports building features for trip duration, average speed and surge indicators.
 
+├─ Trip Duration Patterns
+Graph Reference: fare_vs_duration
+Insight: Most trips are short, under 20 minutes, with a steep drop in frequency for longer rides.
+A small percentage of very long trips suggests either intercity travel or anomalies (possible driver waiting times or recording errors).
+
+├─ Speed Variations by Hour
+Graph Reference: fare_vs_distance + Average Trip Distance by Hour
+Insight: Speeds are highest during off-peak hours (late night & early morning).
+Significant drops during rush hours (7–9 AM and 4–6 PM) due to traffic congestion.
+Lowest speeds align with high-demand periods, which impacts ETAs and customer satisfaction.
+
+├─ Surge-like Indicator (Demand Heatmap by Day & Hour)
+Graph Reference: hourly_trip_metrics + Average Trip Distance by Hour
+Insight: Evening peaks (5–8 PM weekdays, late nights on weekends) dominate demand.
+Morning commute shows smaller peaks compared to evenings.
+Lowest demand is consistently 3–5 AM daily.
 
 Refrences : ├── Average Speed by Hour of Day (Q5visualization)
             ├── Trip Demand Heatmap by Day and Hour (Q5visualization)
@@ -188,9 +205,6 @@ Refrences : ├── Average Speed by Hour of Day (Q5visualization)
             ├── yellow_tripdata_2025-06_cleaned.parquet
             ├── NYC_Taxi_with_Features.csv
          
-
-
-
 ---
 
 ## ✅ Step 2: Understand the Business Context
