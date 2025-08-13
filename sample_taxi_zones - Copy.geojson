@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "LocationID": 1,
+        "Zone": "Greenpoint",
+        "borough": "Brooklyn"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-73.949, 40.722],
+            [-73.946, 40.718],
+            [-73.940, 40.720],
+            [-73.942, 40.724],
+            [-73.949, 40.722]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LocationID": 2,
+        "Zone": "Williamsburg",
+        "borough": "Brooklyn"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-73.960, 40.714],
+            [-73.955, 40.711],
+            [-73.950, 40.715],
+            [-73.953, 40.718],
+            [-73.960, 40.714]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LocationID": 3,
+        "Zone": "Bushwick",
+        "borough": "Brooklyn"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-73.940, 40.700],
+            [-73.935, 40.695],
+            [-73.930, 40.698],
+            [-73.933, 40.702],
+            [-73.940, 40.700]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "LocationID": 4,
+        "Zone": "Bushwick",
+        "borough": "Brooklyn"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-73.940, 40.700],
+            [-73.935, 40.695],
+            [-73.930, 40.698],
+            [-73.933, 40.702],
+            [-73.940, 40.700]
+          ]
+        ]
+      }
+    }
+  ]
+}
