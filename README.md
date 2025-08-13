@@ -236,7 +236,13 @@ Tourism Services: Partnership opportunities with hotels, airports, and event org
 Customer Experience: Offer pre-booking or fixed-fare services from airports to popular dropoff neighborhoods.
 
 # 5 - Answer's 🧠 Business Implication:
-
+Duration can be a predictive feature for pricing and supply planning.
+Outlier filtering can improve model accuracy and operational reliability.
+Average speed can serve as an indicator of congestion and expected delays.
+Useful for dynamic ETAs and real-time fare adjustments.
+Surge indicators can be derived from high-demand vs low-supply time blocks.
+Helps optimize driver shift allocation and surge pricing to balance demand.
+These features can improve fare prediction accuracy, optimize driver allocation and enhance customer experience by predicting congestion and wait times.
 
 ---
 
