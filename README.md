@@ -792,9 +792,121 @@ Refrences : ├── AdvancedVisualizations.py
            
 ---
 
-## ✅ Step 10: Geospatial Mapping (Optional)
+## ✅ Step 10: Geospatial Mapping (Skipped for Now beacuse of Errored GeoJSON file)
 
 Mapped pickup/dropoff zones using Taxi Zone GeoJSON
+Pickup & Dropoff Scatter Maps
+Heatmaps by Pickup Density
+Integration with NYC Taxi Zones GeoJSON
+I'm using PyCharm with Python, the best balance of ease and power for geospatial visualization is Folium. It’s lightweight, interactive, and runs well in scripts.
+
+pip install pandas folium requests
+
+```python
+# nyc_taxi_geospatial_mapping.py
+import pandas as pd
+import numpy as np
+import folium
+import json
+import os
+
+# Set paths
+data_path = 'C:/Users/HP-PC/PycharmProjects/NYC_Taxi_Data_Project/yellow_tripdata_2025-06_cleaned.parquet'
+geojson_path = 'C:/Users/HP-PC/PycharmProjects/NYC_Taxi_Data_Project/sample_taxi_zones.geojson'
+output_map_path = 'C:/Users/HP-PC/PycharmProjects/NYC_Taxi_Data_Project/outputs/nyc_pickups_map.html'
+
+# Load the cleaned trip data
+df = pd.read_parquet(data_path)
+
+# Ensure pickup_borough exists (or simulate it using lat-long if not)
+# For this demo, let's assume we have a 'pickup_borough' column
+
+if 'pickup_borough' not in df.columns:
+    # Simulating with random boroughs (for demo)
+    boroughs = ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island']
+    df['pickup_borough'] = np.random.choice(boroughs, size=len(df))
+
+# Aggregate pickup counts by borough
+borough_counts = df['pickup_borough'].value_counts().reset_index()
+borough_counts.columns = ['borough', 'pickup_count']
+
+# Load GeoJSON data
+with open(geojson_path, 'r') as f:
+    geo_data = json.load(f)
+
+# Create Folium map centered on NYC
+m = folium.Map(location=[40.7128, -74.0060], zoom_start=10)
+
+# Add choropleth layer
+folium.Choropleth(
+    geo_data=geo_data,
+    name='choropleth',
+    data=borough_counts,
+    columns=['borough', 'pickup_count'],
+    key_on='feature.properties.borough',
+    fill_color='YlGnBu',
+    fill_opacity=0.7,
+    line_opacity=0.2,
+    legend_name='Pickup Count by Borough'
+).add_to(m)
+
+
+# Save map to HTML
+os.makedirs('outputs', exist_ok=True)
+m.save(output_map_path)
+print(f"Map saved to {output_map_path}")
+
+```
+```python
+# nyc_taxi_zone_analysis.py
+import pandas as pd
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+
+# Step 1: Load the cleaned taxi dataset
+df = pd.read_parquet("yellow_tripdata_2025-06_cleaned.parquet")
+
+# Step 2: Load the NYC Taxi Zone GeoJSON file
+geojson_path = "sample_taxi_zones.geojson"
+zones_gdf = gpd.read_file(geojson_path)
+
+# Step 3: Quick geometry check
+print("GeoJSON CRS:", zones_gdf.crs)
+print("First 5 geometries:", zones_gdf.geometry.head())
+
+# Step 4: Count pickups per zone
+pickup_counts = df['PULocationID'].value_counts().reset_index()
+pickup_counts.columns = ['LocationID', 'pickup_count']
+
+# Step 5: Merge zone data with pickup counts
+zones_gdf['LocationID'] = zones_gdf['LocationID'].astype(int)
+merged_gdf = zones_gdf.merge(pickup_counts, how='left', on='LocationID')
+merged_gdf['pickup_count'] = merged_gdf['pickup_count'].fillna(0)
+
+# Step 6: Debug – Check data before plotting
+print("\nTop 5 zones by pickup count:")
+print(merged_gdf[['LocationID', 'pickup_count']].sort_values('pickup_count', ascending=False).head())
+print("\nMissing geometries count:", merged_gdf.geometry.isnull().sum())
+
+# Step 7: Save folder
+os.makedirs("outputs/zone_analysis", exist_ok=True)
+
+# Step 8: Plot pickup counts by zone
+fig, ax = plt.subplots(figsize=(12, 10))
+merged_gdf.plot(column='pickup_count', cmap='OrRd', linewidth=0.8, edgecolor='black', legend=True, ax=ax)
+ax.set_title("NYC Taxi Pickup Counts by Zone", fontsize=15)
+ax.set_axis_off()
+
+# Step 9: Save the figure
+output_path = "outputs/zone_analysis/zone_pickup_distribution.png"
+plt.savefig(output_path, dpi=300)
+plt.close()
+
+print(f"✅ Zone-level map saved to: {output_path}")
+```
+outputs/maps/nyc_taxi_pickups_map.html (Open the generated map HTML in browser)
 
 ---
 
