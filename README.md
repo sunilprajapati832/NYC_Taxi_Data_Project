@@ -781,13 +781,14 @@ Zone-to-zone demand patterns
 Extra charges trends (from other charts)
 
 Refrences : ├── AdvancedVisualizations.py
-            ├── Average Fare Amount Over Time.png
-            ├── Heatmap: Number of Rides by Day and Hour.png
-            ├── Correlation Matrix.png ('fare_amount', 'trip_distance', 'passenger_count', 'hour', 'day_of_week')
-            ├── Residuals vs Predicted Fare (Random Forest).png
-            ├── Actual vs Predicted Fare Amount.png
-            ├── Feature Importances from Random Forest.png
+            ├── Figure_1 Average Fare Amount Over Time.png
+            ├── Figure_1 Heatmap Number of Rides by Day and Hourr.png
+            ├── Figure_1 Correlation Matix between fare_amount trip_distance Passenger_count hour day_of_week.png ('fare_amount', 'trip_distance', 'passenger_count', 'hour', 'day_of_week')
+            ├── Figure_1 Residuals vs Predicted Fare (Random Forest).png
+            ├── Figure_1 Actual vs Predicted Fare Amount.png
+            ├── Figure_1 Feature Importances from Random Forest.png
             ├── Pickup Location Distribution.png
+            ├── actual_vs_predicted_analysis
            
 ---
 
