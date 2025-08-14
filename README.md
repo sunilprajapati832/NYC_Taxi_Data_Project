@@ -740,10 +740,55 @@ if 'pickup_longitude' in df.columns and 'pickup_latitude' in df.columns:
 else:
     print("Pickup latitude/longitude not available in this dataset.")
 
-
-
-
 ```
+### Correlation Matrix Analysis
+1. Fare Amount
+Fare Amount ↔ Trip Distance: 0.05 — very weak positive correlation.
+Suggests that in this dataset, fare does not strongly depend on trip distance (possibly due to fixed fares, short trip clustering, or high influence of extra charges).
+
+Fare Amount ↔ Passenger Count: 0.01 — almost no relationship.
+Number of passengers rarely changes the base fare significantly in NYC taxi rates.
+
+Fare Amount ↔ Hour: ≈ 0.00 — no correlation.
+Fare prices do not inherently vary by hour, but extras (like surge) might, which is not directly reflected here.
+
+Fare Amount ↔ Day of Week: 0.00 — no clear trend based solely on day.
+
+2. Trip Distance
+Trip Distance ↔ Passenger Count: 0.02 — negligible correlation.
+Passengers tend to travel similar distances regardless of group size.
+
+Trip Distance ↔ Hour: -0.01 — basically no relationship.
+Time of day doesn’t strongly influence how far people travel.
+
+Trip Distance ↔ Day of Week: 0.01 — no meaningful pattern.
+
+3. Passenger Count
+Passenger Count ↔ Hour: 0.03 — extremely weak positive correlation.
+Slight tendency for higher passenger counts at certain times, possibly related to commute or event times.
+
+Passenger Count ↔ Day of Week: 0.07 — still weak, but the largest among non-self correlations here.
+Possibly more group travel on weekends or specific weekdays.
+
+4. Hour & Day of Week
+Hour ↔ Day of Week: -0.08 — slight negative correlation.
+This just reflects natural variation in trip timing by day type (e.g., weekend travel patterns differ from weekdays).
+
+No strong linear correlations exist between fare amount and basic trip features here, meaning fare variability likely comes from non-linear relationships or external factors (e.g., extra charges, surge pricing, weather). The highest non-diagonal value is 0.07 (Passenger Count ↔ Day of Week) — still negligible, suggesting passenger behavior is broadly consistent across the week. Predictive modeling for fares would require engineered features beyond these basics, such as:
+Trip duration
+Traffic conditions
+Zone-to-zone demand patterns
+Extra charges trends (from other charts)
+
+Refrences : ├── AdvancedVisualizations.py
+            ├── Average Fare Amount Over Time.png
+            ├── Heatmap: Number of Rides by Day and Hour.png
+            ├── Correlation Matrix.png ('fare_amount', 'trip_distance', 'passenger_count', 'hour', 'day_of_week')
+            ├── Residuals vs Predicted Fare (Random Forest).png
+            ├── Actual vs Predicted Fare Amount.png
+            ├── Feature Importances from Random Forest.png
+            ├── Pickup Location Distribution.png
+           
 ---
 
 ## ✅ Step 10: Geospatial Mapping (Optional)
