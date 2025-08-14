@@ -585,8 +585,15 @@ plt.clf()
 print("EDA pipeline executed successfully. Charts saved to outputs/eda_charts/")
 ```
 Refrences : ├── nyc_taxi_eda_pipeline.py
-
-
+            ├── fare_amount_distribution.png
+            ├── fare_vs_distance.png
+            ├── fare_vs_duration.png
+            ├── hourly_trip_metrics.png
+            ├── passenger_count_distribution.png
+            ├── payment_type_distribution.png
+            ├── trip_distance_distribution.png
+            ├── trip_duration_distribution.png
+            ├── weekday_trip_counts.png
 ---
 
 ## ✅ Step 9: Advanced Insights
