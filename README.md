@@ -1386,13 +1386,24 @@ X_test.to_parquet('X_test.parquet')
 y_test.to_frame().to_parquet('y_test.parquet')
 
 ```
-Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizationForTip)
-            ├── Figure_1 Average Tip Amount by Payment Type (DataVisualizationForTip)
-            ├── Figure_4 Distribution of Payment Types (Blue: Credit Card) (TimeSeriesDataAnalysis)
-            ├── Figure_5 Daily Trends in Payment Types (TimeSeriesDataAnalysis)
-            ├── payment_type_distribution (Type 1: Credit Card) (nyc_taxi_eda_pipeline)
-            ├── Figure_3.2 Feature Importance XGBoost (nyc_taxi_fare_prediction_ML)
-            ├── Figure_4 Feature Importance Random Forest (nyc_taxi_fare_prediction_ML)
+Refrences : ├── 
+            ├── 
+            ├── 
+            ├── 
+            ├── 
+            ├── 
+            ├── 
+            ├── Feature Importance - XGBoost
+            ├── Actual vs Predicted Fare Amount (nyc_taxi_full_pipeline.py)
+            ├── Trip Distance Distribution (nyc_taxi_full_pipeline.py)
+            ├── Rides by Hour of Day (nyc_taxi_full_pipeline.py)
+            ├── Passenger Count Distribution (nyc_taxi_full_pipeline.py)
+            ├── Average Fare by Day of Week (nyc_taxi_full_pipeline.py)
+            ├── Fare Amount Distribution (nyc_taxi_full_pipeline.py)
+            ├── Fare Amount vs Trip Distance (nyc_taxi_full_pipeline.py)
+            ├── Fare Amount by Hour of Day (nyc_taxi_full_pipeline.py)
+            ├── Random Forest: Actual vs Predicted Fare Amount (nyc_taxi_full_pipeline.py)
+            ├── Feature Importance - Random Forest 
             ├── nyc_taxi_fare_prediction.py
             ├── nyc_taxi_fare_prediction1.py
             ├── nyc_taxi_full_pipeline.py
