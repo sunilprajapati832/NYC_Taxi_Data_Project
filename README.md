@@ -912,8 +912,13 @@ outputs/maps/nyc_taxi_pickups_map.html (Open the generated map HTML in browser)
 
 ## ✅ Step 11: Machine Learning (Optional)
 
-- Predicting tip_amount
-- Logistic regression for tip/no tip classification
+Predicting tip_amount
+Logistic regression for tip/no tip classification
+Predict tip_amount using trip features
+Classify if a tip will be given (0 or >0)
+Clustering rides by time, distance, and price
+Models: Linear Regression, Logistic Regression, Random Forest
+
 
 ---
 
