@@ -1386,14 +1386,10 @@ X_test.to_parquet('X_test.parquet')
 y_test.to_frame().to_parquet('y_test.parquet')
 
 ```
-Refrences : ├── 
-            ├── 
-            ├── 
-            ├── 
-            ├── 
-            ├── 
-            ├── 
-            ├── Feature Importance - XGBoost
+Refrences : ├── Actual vs Predicted Fare Amount (nyc_taxi_fare_prediction.py)
+            ├── Feature Importance - Random Forest (nyc_taxi_fare_prediction.py)
+            ├── XGBoost: Actual vs Predicted Fare Amount (nyc_taxi_fare_prediction1.py)
+            ├── Feature Importance - XGBoost (nyc_taxi_fare_prediction1.py)
             ├── Actual vs Predicted Fare Amount (nyc_taxi_full_pipeline.py)
             ├── Trip Distance Distribution (nyc_taxi_full_pipeline.py)
             ├── Rides by Hour of Day (nyc_taxi_full_pipeline.py)
