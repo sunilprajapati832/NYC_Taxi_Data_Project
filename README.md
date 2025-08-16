@@ -1619,6 +1619,13 @@ https://github.com/sunilprajapati832/NYC_Taxi_Data_Project
 - Zone intelligence: attach Taxi Zone GeoJSON, compute zone↔zone OD flows, zone-level speeds, and zone surge flags for pre-positioning.
 - Anomaly service: flag trips with extreme extras/tolls or outlier durations for review.
 
+**Longer-term roadmap**
+- Exogenous signals: enrich models with weather, events, and public transit outages.
+- Cost-aware routing: decide when paying tolls improves earnings/hour vs. toll-avoidance paths.
+- Causal/A/B tests:  Off-peak discounts → utilization & revenue/hour.
+                     Driver peak incentives → wait times & cancellations.
+
+MLOps: versioned features, automated validation, retraining schedule, drift monitoring for extras/tolls.
 This step operationalizes the project: I turn insights into levers (staffing, incentives, routing, pricing transparency) backed by engineered features and clean data. Project ready to run this as a repeatable monthly process for ongoing optimization of NYC yellow taxi performance.
 ---
 🛠 Built by: Sunil Prajapati | Python + Data + Github + Canva + PyCharm
