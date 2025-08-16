@@ -1410,9 +1410,15 @@ Refrences : ├── Actual vs Predicted Fare Amount (nyc_taxi_fare_prediction.
 
 ## ✅ Step 12: Data Visualization & Storytelling
 
-- Gamma App for AI-powered presentation
-- Matplotlib & Seaborn for charts
+Tools Used:
+matplotlib, seaborn, plotly , numpy , pandas
+Canva, LinkedIn (for storytelling with AI) : www.linkedin.com/in/sunil-prajapati832
+
+Storytelling Tip:
+Craft a narrative → show a problem → analyze → deliver insight → show action
+
 ```python
+
 #DataVisualization
 # A. Ride Pattern Visualizations:
 import pandas as pd
@@ -1528,42 +1534,79 @@ plt.title('Random Forest: Actual vs Predicted Fare Amount')
 plt.tight_layout()
 plt.show()
 ```
+
+Refrences : ├── Random Forest: Actual vs Predicted Fare Amount (DataVisualization.py)
+            ├── Feature Importance - Random Forest (DataVisualization.py)
+            ├── Fare Amount by Hour of Day (DataVisualization.py)
+            ├── Fare Amount vs Trip Distance (DataVisualization.py)
+            ├── Fare Amount Distribution (DataVisualization.py)
+            ├── Average Fare by Day of Week (DataVisualization.py)
+            ├── Passenger Count Distribution (DataVisualization.py)
+            ├── Rides by Hour of Day (DataVisualization.py)
+            ├── Trip Distance Distribution (DataVisualization.py)
+            ├── DataVisualization.py
+         
+
 ---
 
 ## ✅ Step 13: Publishing & GitHub Upload
 
 **Repo Includes:**
-- Scripts
-- Notebooks
+- Code Scripts 
+- Feature notes
 - Visuals
-- Project README
+- Dataset reference
+- Project README (LinkedIn-ready README.md)
+- GitHub Link: 
+https://github.com/sunilprajapati832/NYC_Taxi_Data_Project
+- LinkedIn Link: www.linkedin.com/in/sunil-prajapati832
+- Dataset Source: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 ---
 
 ## ✅ Step 14: Decision Making & Actions
 
-- Evening rides are most common
-- Credit card rides yield more tips
-- Airport rides follow fixed fee model
+**What we learned (evidence-based)**
+  
+- Demand & time patterns (heatmap): Peak rides cluster 17:00–20:00 on weekdays; weekends shift later. Lowest demand 03:00–05:00.
+- Traffic & operations (speed by hour): Speed bottoms out in morning and evening rush → longer ETAs and lower driver throughput; fastest late night/early morning.
+- Trip duration (distribution): Majority of rides are short (<20 min); long-tail of long trips exists and needs outlier handling.
+- Charges & revenue mix (bar + monthly trend): “extra” dominates total additional revenue and increased from May→June. Tolls are material but trending down (fewer toll-route trips or avoidance). mta_tax and improvement_surcharge are stable, fixed.
+- Correlations (two matrices): Fare vs. single factors (distance/hour/day/passengers) show weak linear correlation in aggregate. Tolls ↔ distance is moderate; fares rise when tolls apply.
+- Interpretation: fare variability is non-linear and context-dependent (time, route, extras), validating the need for engineered features.
+- Data quality (cleaning): Filtering unrealistic durations (>300 min or ≤0) and speeds (>80 mph or ≤0) materially improves signal.
 
+**Decisions I’m making now**
+
+- Pricing & incentives
+1. Adopt a surge-like indicator (our surge_flag using hour/day demand spikes + extra-charge behavior) to drive time-based incentives for drivers in 17:00–20:00 on weekdays and late-night weekends.
+2. Pilot off-peak rider discounts (03:00–05:00, weekday mid-day) to smooth demand and improve utilization.
+
+- Fleet & dispatch
+3. Shift driver availability toward evening peaks; pre-position near known toll corridors/airports only when expected fares offset time lost in congestion.
+4. Use average speed by hour as a congestion proxy to adjust ETAs and prevent over-promising during rush hours.
+
+- Product & transparency
+5. Show an up-front fare breakdown (base + extras + tolls) in rider comms; emphasize that mta_tax & improvement_surcharge are fixed/regulatory.
+
+- Data & modeling
+6. Promote engineered features (trip_duration_min, avg_speed_mph, surge_flag, fare_per_mile, hour, day_of_week, tolls_present) to the modeling schema for forecasting and fare prediction.
+7. Codify data-quality rules used here (duration/speed filters) into the ingestion pipeline.
+
+- Risk & compliance
+8. Monitor fairness/compliance around extras; alerts for abnormal extra/toll patterns (fraud/anomaly flags).
+
+**KPIs to track (with target direction)**
+
+- Rider ETA accuracy (↑ accuracy during peaks)
+- Driver online utilization (↑ in peak windows; ↑ overall)
+- Completion rate / cancellation rate (↑ / ↓ during surge windows)
+- Revenue per online hour (↑; especially evenings)
+- Share of trips with extras & average extra per trip (monitor; no unintended drift)
+- Toll-route ROI = (fare – time cost – tolls) per hour (↑ where we route through tolls)
+- Data quality: % trips failing duration/speed checks (↓)
+
+This step operationalizes the project: I turn insights into levers (staffing, incentives, routing, pricing transparency) backed by engineered features and clean data. Project ready to run this as a repeatable monthly process for ongoing optimization of NYC yellow taxi performance.
 ---
-
-## 📎 Final Notes
-
-- 📁 [Dataset Source](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
-- 🔗 GitHub: [Insert Your Repo Link]
-- 🛠 Built by: Sunil Prajapati | Python + Data + Gamma
-
+🛠 Built by: Sunil Prajapati | Python + Data + Github + Canva + PyCharm
 ---
-
-## 📌 Tags
-
-#DataAnalytics #NYCTaxi #Python #EDA #FeatureEngineering #AIApps #GammaApp #TransportationAnalytics #PortfolioProject #LinkedInProjects
-
-
-outputs/feature_engineering/
-├── trip_duration_distribution.png
-├── trip_speed_distribution.png
-├── trips_by_time_of_day.png
-├── trips_by_day_of_week.png
-└── rush_hour_trip_count.png
