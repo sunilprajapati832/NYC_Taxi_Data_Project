@@ -1613,7 +1613,11 @@ https://github.com/sunilprajapati832/NYC_Taxi_Data_Project
 - Reporting: daily dashboards for demand by hour/day, speed by hour, extras & tolls mix, KPIs above.
 - Pipeline: persist the engineered dataset (you already saved NYC_Taxi_with_Features.csv) and apply cleaning rules on ingest.
 
-****
+**Near-term actions (next sprints)**
+- Forecasting: build an hourly demand forecaster (seasonal model) using hour, day_of_week, surge_flag, and lagged counts.
+- Dynamic incentives: automate driver incentive triggers when forecasted demand ÷ active supply exceeds a threshold.
+- Zone intelligence: attach Taxi Zone GeoJSON, compute zone↔zone OD flows, zone-level speeds, and zone surge flags for pre-positioning.
+- Anomaly service: flag trips with extreme extras/tolls or outlier durations for review.
 
 This step operationalizes the project: I turn insights into levers (staffing, incentives, routing, pricing transparency) backed by engineered features and clean data. Project ready to run this as a repeatable monthly process for ongoing optimization of NYC yellow taxi performance.
 ---
