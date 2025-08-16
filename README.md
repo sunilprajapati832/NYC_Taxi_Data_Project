@@ -1606,6 +1606,15 @@ https://github.com/sunilprajapati832/NYC_Taxi_Data_Project
 - Toll-route ROI = (fare – time cost – tolls) per hour (↑ where we route through tolls)
 - Data quality: % trips failing duration/speed checks (↓)
 
+**Actions**
+**Immediate actions (do now)**
+- Ops schedule: update driver shift guidance to cover 17:00–20:00 weekdays & late-night weekend peaks.
+- ETAs: integrate avg_speed_mph by hour into ETA calculation.
+- Reporting: daily dashboards for demand by hour/day, speed by hour, extras & tolls mix, KPIs above.
+- Pipeline: persist the engineered dataset (you already saved NYC_Taxi_with_Features.csv) and apply cleaning rules on ingest.
+
+****
+
 This step operationalizes the project: I turn insights into levers (staffing, incentives, routing, pricing transparency) backed by engineered features and clean data. Project ready to run this as a repeatable monthly process for ongoing optimization of NYC yellow taxi performance.
 ---
 🛠 Built by: Sunil Prajapati | Python + Data + Github + Canva + PyCharm
