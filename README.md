@@ -5,6 +5,7 @@
 **Project Type:** Real-World, End-to-End Data Analytics with Community Collaboration  (This project explores NYC Yellow Taxi trip data to uncover patterns in passenger behavior, trip fares, tips, and congestion trends using Python and pandas.)
 
 ## 📊 Columns Explained
+
 | **Column Name**         | **Description**                                                                                   |
 | ----------------------- | ------------------------------------------------------------------------------------------------- |
 | `VendorID`              | Code for the provider (1 = Creative Mobile Technologies, 2 = VeriFone Inc, 4/5/7 = Other vendors) |
