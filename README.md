@@ -586,7 +586,7 @@ plt.clf()
 
 print("EDA pipeline executed successfully. Charts saved to outputs/eda_charts/")
 ```
-# Graphs we achieved
+# Graphs
 ![Graph Preview](Figure_1A3PassengerCountDistribution.png)
 ![Graph Preview](payment_type_distribution.png)
 ![Graph Preview](trip_distance_distribution.png)
