@@ -590,6 +590,7 @@ print("EDA pipeline executed successfully. Charts saved to outputs/eda_charts/")
 ![Graph Preview](Figure_1A3PassengerCountDistribution.png)
 ![Graph Preview](payment_type_distribution.png)
 ![Graph Preview](trip_distance_distribution.png)
+![Graph Preview](trip_duration_distribution(2).png)
 
 Refrences : ├── nyc_taxi_eda_pipeline.py
             ├── fare_amount_distribution.png
