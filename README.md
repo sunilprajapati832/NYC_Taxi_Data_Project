@@ -586,7 +586,7 @@ plt.clf()
 
 print("EDA pipeline executed successfully. Charts saved to outputs/eda_charts/")
 ```
-![Graph Preview](Figure_1 A3 Passenger Count Distribution.png)
+![Graph Preview](Figure_1A3PassengerCountDistribution.png)
 
 Refrences : ├── nyc_taxi_eda_pipeline.py
             ├── fare_amount_distribution.png
