@@ -594,6 +594,7 @@ print("EDA pipeline executed successfully. Charts saved to outputs/eda_charts/")
 ![Graph Preview](Figure_1B1FareAmountDistribution.png)
 ![Graph Preview](Figure_1B2FareAmountvsTripDistance.png)
 ![Graph Preview](trips_by_day_of_week.png)
+![Graph Preview](fare_vs_duration.png)
 
 
 
