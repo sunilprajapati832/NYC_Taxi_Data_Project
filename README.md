@@ -758,7 +758,7 @@ else:
 ## Graphs
 ![Graph Preview](Figure_1AverageFareAmountOverTime.png)
 ![Graph Preview](Figure_1HeatmapNumberofRidesbyDayandHour.png)
-
+![Graph Preview](Figure_5CorrelationMatrixbetweennumericfeatures.png)
 
 ### Correlation Matrix Analysis
 1. Fare Amount
