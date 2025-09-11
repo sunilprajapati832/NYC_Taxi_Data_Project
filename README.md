@@ -757,6 +757,7 @@ else:
 ```
 ## Graphs
 ![Graph Preview](Figure_1AverageFareAmountOverTime.png)
+![Graph Preview](Figure_1HeatmapNumberofRidesbyDayandHour.png)
 
 
 ### Correlation Matrix Analysis
