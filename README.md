@@ -755,6 +755,10 @@ else:
     print("Pickup latitude/longitude not available in this dataset.")
 
 ```
+## Graphs
+![Graph Preview](Figure_1AverageFareAmountOverTime.png)
+
+
 ### Correlation Matrix Analysis
 1. Fare Amount
 Fare Amount ↔ Trip Distance: 0.05 — very weak positive correlation.
