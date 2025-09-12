@@ -760,7 +760,7 @@ else:
 ![Graph Preview](Figure_1HeatmapNumberofRidesbyDayandHour.png)
 ![Graph Preview](Figure_5CorrelationMatrixbetweennumericfeatures.png)
 ![Graph Preview](Figure_1ResidualsvsPredictedFare(RandomForest).png)
-
+![Graph Preview](Figure_1ActualvsPredictedFareAmount.png)
 
 ### Correlation Matrix Analysis
 1. Fare Amount
