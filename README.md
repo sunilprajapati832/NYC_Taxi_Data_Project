@@ -761,6 +761,8 @@ else:
 ![Graph Preview](Figure_5CorrelationMatrixbetweennumericfeatures.png)
 ![Graph Preview](Figure_1ResidualsvsPredictedFare(RandomForest).png)
 ![Graph Preview](Figure_1ActualvsPredictedFareAmount.png)
+![Graph Preview](Figure_1ActualvsPredictedFareAmount.png)
+![Graph Preview](Figure_4FeatureImportanceRandomForest.png)
 
 ### Correlation Matrix Analysis
 1. Fare Amount
