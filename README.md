@@ -932,6 +932,10 @@ print(f"✅ Zone-level map saved to: {output_path}")
 ```
 outputs/maps/nyc_taxi_pickups_map.html (Open the generated map HTML in browser)
 
+## Graph
+
+![Graph Preview](zone_pickup_distribution.png)
+
 ---
 
 ## ✅ Step 11: Machine Learning (Optional)
