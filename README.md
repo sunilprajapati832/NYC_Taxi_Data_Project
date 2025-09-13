@@ -935,6 +935,7 @@ outputs/maps/nyc_taxi_pickups_map.html (Open the generated map HTML in browser)
 ## Graph
 
 ![Graph Preview](zone_pickup_distribution.png)
+![Graph Preview](nyc_pickups_map_html.png)
 
 ---
 
