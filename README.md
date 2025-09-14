@@ -1416,6 +1416,7 @@ y_test.to_frame().to_parquet('y_test.parquet')
 
 ```
 ![Graph Priview](Figure_1ActualvsPredictedFareAmount.png)
+![Graph Priview](Figure_1FeatureImportancesfromRandomForest.png)
 
 Refrences : ├── Actual vs Predicted Fare Amount (nyc_taxi_fare_prediction.py)
             ├── Feature Importance - Random Forest (nyc_taxi_fare_prediction.py)
