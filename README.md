@@ -1420,6 +1420,7 @@ y_test.to_frame().to_parquet('y_test.parquet')
 ![Graph Priview](Figure_3XGBoostRegressorActualvsPredictedFareAmount.png)
 ![Graph Preview](Figure_3.2FeatureImportanceXGBoost.png)
 ![Graph Preview](Figure_1C2ActualvsPredictedFareAmount(RandomForest).png)
+![Graph Preview](Figure_1A1TripDistanceDistribution.png)
 
 Refrences : ├── Actual vs Predicted Fare Amount (nyc_taxi_fare_prediction.py)
             ├── Feature Importance - Random Forest (nyc_taxi_fare_prediction.py)
