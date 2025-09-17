@@ -1426,6 +1426,8 @@ y_test.to_frame().to_parquet('y_test.parquet')
 ![Graph Preview](Figure_1B1FareAmountDistribution.png)
 ![Graph Preview](Figure_1B2FareAmountvsTripDistance.png)
 ![Graph Prvview](Figure_1B3FareAmountbyHourofDay.png)
+![Graph Preview](Figure_1FeatureImportancesfromRandomForest.png)
+
 
 Refrences : ├── Actual vs Predicted Fare Amount (nyc_taxi_fare_prediction.py)
             ├── Feature Importance - Random Forest (nyc_taxi_fare_prediction.py)
