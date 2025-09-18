@@ -1578,6 +1578,9 @@ plt.title('Random Forest: Actual vs Predicted Fare Amount')
 plt.tight_layout()
 plt.show()
 ```
+## Graphs
+![Graph Preview]()
+
 
 Refrences : ├── Random Forest: Actual vs Predicted Fare Amount (DataVisualization.py)
             ├── Feature Importance - Random Forest (DataVisualization.py)
