@@ -1579,7 +1579,7 @@ plt.tight_layout()
 plt.show()
 ```
 ## Graphs
-![Graph Preview]()
+![Graph Preview](Figure_1A4AverageFarebyDayofWeek.png)
 
 
 Refrences : ├── Random Forest: Actual vs Predicted Fare Amount (DataVisualization.py)
