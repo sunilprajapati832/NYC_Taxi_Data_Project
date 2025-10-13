@@ -92,6 +92,7 @@ Greater likelihood of leaving a tip
 Lower recorded tips ( 0.0004 $ Avg ) possibly due to offline tipping
 Analysis of 4.3 million taxi rides shows that both tipping behavior and payment preferences strongly favor Credit Cards (Refrenced by PyCharm Console Result Table).
 
+
 Refrences : ├── Figure_1.1 Trip Frequency by Payment Type (DataVisualizationForTip)
             ├── Figure_1 Average Tip Amount by Payment Type (DataVisualizationForTip)
             ├── Figure_4 Distribution of Payment Types (Blue: Credit Card) (TimeSeriesDataAnalysis)
