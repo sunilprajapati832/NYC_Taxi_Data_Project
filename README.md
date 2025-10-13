@@ -30,7 +30,6 @@
 | `cbd_congestion_fee`    | Congestion fee for entering Manhattan’s Central Business District                                 |
 
 
-
 Step 1: Define the Problem Statement
 Step 2: Understand the Business Context
 Step 3: Data Collection
