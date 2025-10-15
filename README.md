@@ -1674,6 +1674,7 @@ https://github.com/sunilprajapati832/NYC_Taxi_Data_Project
 
 MLOps: versioned features, automated validation, retraining schedule, drift monitoring for extras/tolls.
 This step operationalizes the project: I turn insights into levers (staffing, incentives, routing, pricing transparency) backed by engineered features and clean data. Project ready to run this as a repeatable monthly process for ongoing optimization of NYC yellow taxi performance.
+
 ---
 🛠 Built by: Sunil Prajapati | Python + Data + Github + Canva + PyCharm
 ---
