@@ -4,6 +4,7 @@
 **Dataset Size:** ~4.3M rows × 20 columns `yellow_tripdata_2025-06.parquet`(.parquet format)  
 **Project Type:** Real-World, End-to-End Data Analytics with Community Collaboration  (This project explores NYC Yellow Taxi trip data to uncover patterns in passenger behavior, trip fares, tips, and congestion trends using Python and pandas.)
 
+
 ## 📊 Columns Explained
 
 | **Column Name**         | **Description**                                                                                   |
