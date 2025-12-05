@@ -1683,5 +1683,6 @@ This step operationalizes the project: I turn insights into levers (staffing, in
 ## Connect with Me 🤝
 If you found this project interesting, let’s connect!  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20Me-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/sunil-prajapati832)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow%20Me-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/sunil-prajapati832)
+  
  
